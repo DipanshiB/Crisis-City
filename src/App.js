@@ -34,9 +34,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Homepage} />
-          {/* <Route path='/login' component={Login} /> */}
-          {/* <Route path='/signup' component={Register} /> */}
-          <Route path='/2048' component={Game_2048} />
+          {/* <Route path='/2048' component={Game_2048} /> */}
       </Switch>
       </BrowserRouter>
     </div>

@@ -24,6 +24,10 @@ class Game_2048 extends React.Component {
     }
   }
 
+componentDidMount() {
+  document.addEventListener("keydown", this._handleKeyDown);
+}
+
 addRandomTile = () => {
   var value = Math.random() < 0.7 ? 2 : 4;     //problem : gets hanged if one more key pressed after array gets filled.
   var cell_idx = getRandomInt(4);
@@ -57,7 +61,7 @@ reset = () => {
   $('#score_val').text(score);
 }
 
-$(document).keydown( (e) => {
+_handleKeyDown = (e) => {
   if(e.which == 37){
     console.log("left pressed");
     for(var r=0; r<4; r++){

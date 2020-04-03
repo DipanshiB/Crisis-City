@@ -1,0 +1,27 @@
+.game{
+    /* margin: auto; */
+    background-color:#4f3870;
+    margin-left: 33%;
+    margin-top: 25px;
+    position: absolute;
+    align: center;
+    padding: 10px;
+    border: 1px solid black;
+    width : 450px;
+    height : 450px;
+  }
+  .square{
+    background-color: white;
+    /* #d7caeb */
+    float : left;
+    /* border: 1px solid black; */
+    width : 50px;
+    height : 50px;
+    padding: 25px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+  }
